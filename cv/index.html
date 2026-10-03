@@ -16,17 +16,63 @@
   </nav>
 
   <h1>CV</h1>
+      <section>
+    <h2>Education</h2>
+    <article>
+      <header>
+        <h3>University of California, San Diego</h3>
+        <p>B.S. Data Science (ML/AI track) · Expected <time datetime="2027-06">June 2027</time></p>
+      </header>
+      <ul>
+        <li>Coursework: Probabilistic Modeling &amp; ML, Scalable Analytics, Data Visualization, Applied Statistical Inference, Autonomous Vehicles</li>
+      </ul>
+    </article>
+  </section>
 
-  <!--
-    Step 8 — your CV. Required elements:
-      [ ] <section> for each part you'd list in a table of contents
-          (e.g. Education, Experience, Projects, Skills)
-      [ ] <article> for each self-contained entry inside a section
-          (e.g. one job, one project)
-      [ ] headings, paragraphs, lists
-      [ ] <a> links (GitHub repos, etc.)
-      [ ] <time> for dates, e.g. <time datetime="2027-06">June 2027</time>
-    Optional: <header> inside an <article>, <img> for logos.
-  -->
+  <section>
+    <h2>Experience</h2>
+    <article>
+      <header>
+        <h3>AI Engineering Intern, ArcellAI</h3>
+        <p><time datetime="2026-06">Summer 2026</time> – Present</p>
+      </header>
+      <ul>
+        <li>Built a biosignal loader and quality-control engine for clinical EEG/sleep data (Python, MNE, Pydantic), with offline tests and GitHub Actions CI.</li>
+        <li>Now prototyping simulated robotic sample handling with placement verification for an autonomous-lab proposal (ROS 2, MoveIt Task Constructor).</li>
+      </ul>
+    </article>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <article>
+      <h3>6-DoF Robot Arm with Imitation Learning</h3>
+      <p>Built an SO-101 arm, collected 50+ teleoperated demonstrations, and trained and deployed an ACT policy for pick-and-place on real hardware.</p>
+    </article>
+    <article>
+      <h3>Autonomous RC Car (DSC 190)</h3>
+      <p>Trained and deployed a behavioral cloning driving model to a Raspberry Pi 5 on a physical car.</p>
+    </article>
+    <article>
+      <h3>ECG Analog Front-End</h3>
+      <p>Built an AD620-based amplifier circuit and Python pipeline to capture, filter, and analyze live ECG.
+        <a href="https://github.com/macblair221/eeg-signal-acquisition" target="_blank">Code</a></p>
+    </article>
+    <article>
+      <h3>Parkinson's Medication-State EEG Classifier</h3>
+      <p>Cross-subject EEG classifier evaluated with leave-one-subject-out validation and a permutation null.
+        <a href="https://github.com/macblair221/parkinsons-eeg-classifier" target="_blank">Code</a></p>
+    </article>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Languages: Python, C++, R, SQL, HTML/CSS</li>
+      <li>Robotics: ROS 2, MoveIt 2, MoveIt Task Constructor</li>
+      <li>ML &amp; data: PyTorch, scikit-learn, MNE-Python, Pandas</li>
+      <li>Tools: Git, GitHub Actions, Linux</li>
+    </ul>
+  </section> 
 </body>
 </html>

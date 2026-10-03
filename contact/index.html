@@ -16,18 +16,20 @@
   </nav>
 
   <h1>Contact</h1>
-
-  <!--
-    Step 7 — build the <form> here. Checklist from the lab:
-      [ ] <form> with action="mailto:YOUR_EMAIL", method="POST", enctype="text/plain"
-      [ ] <input> with name="email" and type="email"
-      [ ] <input> with name="subject"
-      [ ] <textarea> with name="body"
-      [ ] each field wrapped in a <label> with the field name as its text
-      [ ] a <button> to submit
-      [ ] (optional) default values so you don't retype while testing
-    Try it once WITHOUT method/enctype and see what changes — the lab asks why.
-    No tables for layout.
-  -->
+    <form action="mailto:macblair221@gmail.com" method="POST" enctype="text/plain">
+      <label>
+        Email
+        <input type="email" name="email">
+      </label>
+      <label>
+        Subject
+        <input name="subject">
+      </label>
+      <label>
+        Message
+        <textarea name="body"></textarea>
+      </label>
+     <button>Submit</button>
+    </form>
 </body>
 </html>
