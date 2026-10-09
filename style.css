@@ -64,3 +64,23 @@ form label {
 form button {
   grid-column: 1 / -1;
 }
+
+section {
+  margin-block: 2em;
+}
+
+section > h2 {
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.2em;
+}
+
+article header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+time {
+  color: oklch(50% 0 0);
+  font-size: 90%;
+}
