@@ -1,0 +1,74 @@
+[
+  {
+    "title": "6-DoF Robot Arm with Imitation Learning",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built a LeRobot SO-101 arm, recorded 50+ teleoperated demos, and trained an Action Chunking Transformer (ACT) policy that does pick-and-place on the real hardware."
+  },
+  {
+    "title": "Autonomous RC Car (DSC 190)",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Trained a behavioral cloning model and deployed it to a Raspberry Pi 5 on a physical car, then wrote a lighting-robust line follower with cone-stop and reverse-on-lost behaviors."
+  },
+  {
+    "title": "Parkinson's Medication-State EEG Classifier",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Cross-subject classifier that predicts levodopa ON/OFF state from resting-state EEG, evaluated with leave-one-subject-out validation and a permutation null."
+  },
+  {
+    "title": "ECG Analog Front-End",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built an AD620-based amplifier circuit with an Arduino and a Python pipeline to capture, filter, and analyze live ECG."
+  },
+  {
+    "title": "Data-Driven Projects and GitHub Stats (DSC 106 Lab 4)",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Moved my project data into a JSON file, rendered it with a reusable JavaScript function, and pulled live stats from the GitHub API."
+  },
+  {
+    "title": "Dynamic Nav and Dark Mode (DSC 106 Lab 3)",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built the site nav in JavaScript with automatic current-page highlighting, plus a light/dark theme switch that remembers your choice."
+  },
+  {
+    "title": "Styling the Portfolio with CSS (DSC 106 Lab 2)",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Styled the site with a flexbox nav, an accent color, a grid-based contact form, and a structured CV page."
+  },
+  {
+    "title": "Portfolio Website in HTML (DSC 106 Lab 1)",
+    "year": "2026",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Built the first version of this site: a multi-page layout with a home page, projects, CV, and a contact form."
+  },
+  {
+    "title": "Lorem ipsum dolor sit.",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "title": "Amet consectetur adipiscing elit.",
+    "year": "2025",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "title": "Sed do eiusmod tempor.",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "title": "Incididunt ut labore et.",
+    "year": "2024",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  }
+]

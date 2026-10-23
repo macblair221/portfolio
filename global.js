@@ -102,3 +102,56 @@ form?.addEventListener('submit', function (event) {
   let url = form.action + '?' + params.join('&');
   location.href = url;
 });
+
+// ---------- Lab 4, Step 1.2: load a JSON file ----------
+export async function fetchJSON(url) {
+  try {
+    // Fetch the JSON file from the given URL
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch projects: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching or parsing JSON data:', error);
+  }
+}
+
+// ---------- Lab 4, Step 1.4: render a list of projects ----------
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+  if (!containerElement) {
+    console.error('renderProjects: container element not found');
+    return;
+  }
+
+  // Only allow real heading tags (h1 to h6), otherwise fall back to h2
+  if (!/^h[1-6]$/.test(headingLevel)) {
+    headingLevel = 'h2';
+  }
+
+  // Clear old content so projects don't get added twice
+  containerElement.innerHTML = '';
+
+  if (!projects || projects.length === 0) {
+    containerElement.innerHTML = '<p>No projects to show yet.</p>';
+    return;
+  }
+
+  for (let project of projects) {
+    const article = document.createElement('article');
+    article.innerHTML = `
+      <${headingLevel}>${project.title}</${headingLevel}>
+      <img src="${project.image}" alt="${project.title}">
+      <p>${project.description}</p>
+    `;
+    containerElement.appendChild(article);
+  }
+}
+
+// ---------- Lab 4, Step 3.2: GitHub profile data ----------
+export async function fetchGitHubData(username) {
+  return fetchJSON(`https://api.github.com/users/${username}`);
+}
