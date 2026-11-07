@@ -187,3 +187,97 @@ time {
   margin-bottom: 1em;
   box-sizing: border-box;
 }
+
+/* ---------- Lab 6 ---------- */
+
+dl.stats {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 0.25em 1em;
+  text-align: center;
+  margin-block: 1em;
+}
+
+dl.stats dt {
+  grid-row: 1;
+  font-size: 80%;
+  text-transform: uppercase;
+  color: color-mix(in oklch, canvastext 60%, canvas);
+}
+
+dl.stats dd {
+  grid-row: 2;
+  margin: 0;
+  font-size: 150%;
+}
+
+.gridlines .tick line {
+  stroke-opacity: 0.15;
+}
+
+.gridlines .domain {
+  display: none;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25em 1em;
+  margin: 0;
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+
+  dt {
+    color: color-mix(in oklch, canvastext 60%, canvas);
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  padding: 0.75em 1em;
+  background-color: color-mix(in oklch, canvas 85%, transparent);
+  backdrop-filter: blur(6px);
+  border-radius: 0.5em;
+  box-shadow: 0 2px 8px oklch(0% 0 0 / 20%);
+  font-size: 90%;
+}
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+
+.selection {
+  fill-opacity: 0.1;
+  stroke: currentColor;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
