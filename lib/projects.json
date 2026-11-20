@@ -1,5 +1,12 @@
 [
   {
+    "title": "Bikewatching: Boston Bike Traffic Map (DSC 106 Lab 7)",
+    "year": "2026",
+    "image": "https://macblair221.github.io/portfolio/images/bikewatching.jpg",
+    "description": "Interactive Mapbox + D3 map of about 260,000 Bluebikes trips in Boston and Cambridge. Circle size shows traffic at each station, color shows whether more bikes leave or arrive, and a time slider filters by hour of day.",
+    "url": "https://macblair221.github.io/bikewatching/"
+  },
+  {
     "title": "6-DoF Robot Arm with Imitation Learning",
     "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
@@ -15,13 +22,15 @@
     "title": "Parkinson's Medication-State EEG Classifier",
     "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Cross-subject classifier that predicts levodopa ON/OFF state from resting-state EEG, evaluated with leave-one-subject-out validation and a permutation null."
+    "description": "Cross-subject classifier that predicts levodopa ON/OFF state from resting-state EEG, evaluated with leave-one-subject-out validation and a permutation null.",
+    "url": "https://github.com/macblair221/parkinsons-eeg-classifier"
   },
   {
     "title": "ECG Analog Front-End",
     "year": "2026",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-    "description": "Built an AD620-based amplifier circuit with an Arduino and a Python pipeline to capture, filter, and analyze live ECG."
+    "description": "Built an AD620-based amplifier circuit with an Arduino and a Python pipeline to capture, filter, and analyze live ECG.",
+    "url": "https://github.com/macblair221/eeg-signal-acquisition"
   },
   {
     "title": "Data-Driven Projects and GitHub Stats (DSC 106 Lab 4)",
