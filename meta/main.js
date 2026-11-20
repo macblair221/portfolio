@@ -12,7 +12,8 @@ let rScale;
 // Shared chart size (used by renderScatterPlot and updateScatterPlot)
 const width = 1000;
 const height = 600;
-const margin = { top: 10, right: 10, bottom: 30, left: 20 };
+// Extra room on the left/bottom for the bigger axis labels
+const margin = { top: 10, right: 10, bottom: 50, left: 70 };
 const usableArea = {
   top: margin.top,
   right: width - margin.right,
@@ -200,7 +201,13 @@ function updateScatterPlot(data, commits) {
   const svg = d3.select('#chart').select('svg');
 
   // Stretch the x axis over just the commits being shown
-  xScale = xScale.domain(d3.extent(commits, (d) => d.datetime)).nice();
+  let [minDate, maxDate] = d3.extent(commits, (d) => d.datetime);
+  if (+minDate === +maxDate) {
+    // Only one commit: give the axis a day on each side so it has a range
+    minDate = d3.timeDay.offset(minDate, -1);
+    maxDate = d3.timeDay.offset(maxDate, 1);
+  }
+  xScale = xScale.domain([minDate, maxDate]).nice();
 
   // Redraw the x axis in place instead of adding a new one
   const xAxisGroup = svg.select('g.x-axis');
